@@ -5,10 +5,7 @@ const PORT = 3000;
 
 app.get("/", (req , res)=>{
     res.send("Why are you here")
-})
-
-app.send("/", (req, res) => {
-    res.send("bye")
+    alert("Why are you here");
 })
 
 
