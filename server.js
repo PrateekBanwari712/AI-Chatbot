@@ -8,6 +8,19 @@ app.get("/", (req , res)=>{
     alert("Why are you here");
 })
 
+app.get("/login", (req , res) => {
+    res.send(<>
+    <div>
+        hello world
+    </div>
+    </>)
+})
+
+
+app.post("/api", (req, res) => {
+    const message = req.body;
+    
+})
 
 
 app.listen(PORT, ()=>{
