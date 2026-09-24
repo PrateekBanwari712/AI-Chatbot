@@ -17,6 +17,11 @@ app.get("/login", (req , res) => {
 })
 
 
+app.post("/api", (req, res) => {
+    const message = req.body;
+    
+})
+
 
 app.listen(PORT, ()=>{
     console.log("Hello from the server")
