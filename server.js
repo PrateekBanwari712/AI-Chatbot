@@ -9,6 +9,14 @@ app.get("/", (req , res)=>{
 })
 
 
+app.get("/login", (req , res) => {
+    res.send(<>
+    <div>
+        hello world
+    </div>
+    </>)
+})
+
 
 app.listen(PORT, ()=>{
     console.log("Hello from the server")
