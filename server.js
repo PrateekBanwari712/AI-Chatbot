@@ -8,7 +8,6 @@ app.get("/", (req , res)=>{
     alert("Why are you here");
 })
 
-
 app.get("/login", (req , res) => {
     res.send(<>
     <div>
@@ -16,6 +15,7 @@ app.get("/login", (req , res) => {
     </div>
     </>)
 })
+
 
 
 app.listen(PORT, ()=>{
