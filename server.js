@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { response } from 'express'
 
 const app = express()
 const PORT = 3000;
@@ -11,6 +11,13 @@ app.get("/", (req , res)=>{
 app.get("/login", (req, res) => {
     const test = req.body;
     res.send("hello wrold")
+})
+app.get("/logout", (req, res) => {
+    return (
+        <div>
+            logout
+        </div>
+    )
 })
 
 
