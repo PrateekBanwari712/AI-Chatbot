@@ -19,6 +19,13 @@ app.get("/logout", (req, res) => {
         </div>
     )
 })
+app.get("/dashboard", ()=>{
+    return (
+        <div>
+            welocme to the world of magic
+        </div>
+    )
+})
 
 
 app.listen(PORT, ()=>{
