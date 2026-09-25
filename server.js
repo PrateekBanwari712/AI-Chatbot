@@ -8,25 +8,9 @@ app.get("/", (req , res)=>{
     alert("Why are you here");
 })
 
-app.get("/login", (req, res) => {
-    const test = req.body;
-    res.send("hello wrold")
+app.get("/hello", (res)=>{
+    res.send("hello world")
 })
-app.get("/logout", (req, res) => {
-    return (
-        <div>
-            logout
-        </div>
-    )
-})
-app.get("/dashboard", ()=>{
-    return (
-        <div>
-            welocme to the world of magic
-        </div>
-    )
-})
-
 
 app.listen(PORT, ()=>{
     console.log("Hello from the server")
