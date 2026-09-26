@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { response } from 'express'
 
 const app = express()
 const PORT = 3000;
@@ -8,20 +8,9 @@ app.get("/", (req , res)=>{
     alert("Why are you here");
 })
 
-app.get("/login", (req , res) => {
-    res.send(<>
-    <div>
-        hello world
-    </div>
-    </>)
+app.get("/hello", (res)=>{
+    res.send("hello world")
 })
-
-
-app.post("/api", (req, res) => {
-    const message = req.body;
-    
-})
-
 
 app.listen(PORT, ()=>{
     console.log("Hello from the server")
