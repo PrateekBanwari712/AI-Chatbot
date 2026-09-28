@@ -1,11 +1,15 @@
-import React from 'react'
 
-const indes = () => {
-  return (
-    <div>
-        hello world
-    </div>
-  )
-}
+import express from "express"
 
-export default indes
+const app = express();
+
+app.get("/login", (res) => {
+  res.send("login first")
+})
+
+app.listen(3000, (err)=>{
+  console.log("hello from the indes")
+  if(err){
+    console.log("Error from the indes", err)
+  }
+})
