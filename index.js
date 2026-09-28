@@ -8,8 +8,8 @@ app.get("/login", (res) => {
 })
 
 app.listen(3000, (err)=>{
-  console.log("hello from the indes")
+  console.log("hello from the index")
   if(err){
-    console.log("Error from the indes", err)
+    console.log("Error from the index", err)
   }
 })
