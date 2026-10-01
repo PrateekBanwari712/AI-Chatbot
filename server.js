@@ -8,8 +8,8 @@ app.get("/", (req , res)=>{
     alert("Why are you here");
 })
 
-app.get("/hello", (res)=>{
-    res.send("hello world")
+app.get("/chalo", (res)=>{
+    res.send("hello world! bye bye")
 })
 
 app.listen(PORT, ()=>{
